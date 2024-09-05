@@ -13,7 +13,7 @@ class DBClient {
     this.connected = false;
 
 
-    this.client.connect()
+      this.client.connect()
       .then(() => {
         this.connected = true;
         this.db = this.client.db(this.dbName);
